@@ -7,6 +7,7 @@ class Schedule extends Component {
     return (
         <div className="schedule">
           <h1 className="schedule_title">My Schedule</h1>
+          <Gradient/>
         </div>
       )
   }
