@@ -3,8 +3,10 @@
 
     display: grid;
     grid-teplate-rows: [title-s] 100px [title-e courses-s] repeat(auto-fit, 1fr) [courses-e];
+    grid-row-gap: 22px;
 
     &__title {
     // grid-row: title-s/title-e;
     }
+
 }
