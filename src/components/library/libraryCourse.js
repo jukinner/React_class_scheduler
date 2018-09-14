@@ -9,7 +9,7 @@ class LibraryCourse extends Component {
 		return (
 			<div className = 'library-course'>
 				<div className="library-course__title-check">
-					<label className="library-course__title">Problem Solving</label>
+					<label className="library-course__title">{ this.props.title }</label>
 					{ Icon('fas fa-check', 'library-course__icon') }
 				</div>
 				<Arrow className="library-course__arrow" />
@@ -17,7 +17,7 @@ class LibraryCourse extends Component {
 				{ Icon("fas fa-plus-circle", 'library-course__action') }
 					<div className="library-course__description">
 						<label>Course Descrption</label>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in </p>
+						<p>{ this.props.description } </p>
 					</div>
 
 			</div>
