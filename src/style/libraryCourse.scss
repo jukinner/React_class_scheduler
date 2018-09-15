@@ -2,26 +2,70 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fit, 1fr);
 	grid-template-rows: repeate(auto-fit, 1fr);
-  background: cornflowerblue;
-
 
 	&__title-check {
 		grid-row: 1/2;
     display: flex;
-	}
+    grid-column: 1/2;
+  }
+
+  &__line {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
 
   &__arrow {
     grid-row: 1/2;
+    grid-column: 2/3;
   }
 
   &__action {
     grid-row: 1/2;
+    grid-column: 3/4;
   }
 
-  &__action
-
 	&__description {
-		grid-row: 2/3;
+    grid-row: 2/3;
+    grid-colun: 1/-1;
 	}
 }
 
+.library-course {
+
+  padding: 25px;
+
+  &:hover {
+    background: white;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.21);
+  }
+
+  &__title {
+    color: $color-gray;
+    font-family: $font-lato;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__line {
+    border-bottom: 1px solid #F2F2F2;
+  }
+
+  &__icon{
+    color: $color-blue;
+  }
+
+  &__description{
+    label {
+      color: $color-blue;
+      font-family: $font-alegreya;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+    }
+    p {
+      color: $color-gray;
+      font-family: $font-lato;
+      font-size: 16px;
+    }
+  }
+}
