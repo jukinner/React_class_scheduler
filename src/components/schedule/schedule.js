@@ -21,7 +21,7 @@ class Schedule extends Component {
     return (
         <div className="schedule">
           <h1 className="schedule_title">My Schedule</h1>
-
+          { this.renderCourses() }
           <ProgressTracker/>
           <Gradient/>
         </div>
