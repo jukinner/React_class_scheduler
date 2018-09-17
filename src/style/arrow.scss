@@ -1,8 +1,14 @@
 .arrow{
-  border-top: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-bottom: 15px solid blue;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid $color-blue;
 
   height: 0;
   width: 0;
+
+  transition: all .3s ease;
+}
+
+.arrow-closed {
+  transform: rotate(180deg);
 }

@@ -1,7 +1,7 @@
 .library-course {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, 1fr);
-	grid-template-rows: repeate(auto-fit, 1fr);
+	grid-template-rows: 80px 1fr;
 
 	&__title-check {
 		grid-row: 1/2;
@@ -48,6 +48,8 @@
 
   &__line {
     border-bottom: 1px solid #F2F2F2;
+    margin-top: 19px;
+    margin-bottom: 24px;
   }
 
   &__icon{
