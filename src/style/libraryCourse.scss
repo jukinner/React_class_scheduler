@@ -30,13 +30,21 @@
 	}
 }
 
+@mixin solid-course {
+  background: white;
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.21);
+}
+
+.library-course-selected {
+  @include solid-course();
+}
+
 .library-course {
 
   padding: 25px;
 
   &:hover {
-    background: white;
-    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.21);
+    @include solid-course;
   }
 
   &__title {
